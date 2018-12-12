@@ -1,9 +1,16 @@
+*{
+    margin:0px;
+    padding:0px;
+}
 header{
+    /* background-image: url('https://i.pinimg.com/originals/78/7a/cf/787acf5230aa7ba10152882cb59df346.jpg');
+    background-size: 100% 300px; 
+    background-repeat: no-repeat; */
     width:100%;
     text-align: center;
 }
 img#logo{
-    height: 200px;
+    height: 300px;
     width:  400px;
 }
 #navbar{
@@ -17,7 +24,6 @@ img#logo{
   #navbar a {
     color: #f2f2f2;
     text-align: center;
-  
     margin-left: 75px;
     margin-right: 75px;
     margin-top: 10px;
