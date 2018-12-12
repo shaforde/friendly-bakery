@@ -1,13 +1,8 @@
-require muffins.rb
-require ruby.rb
-require bakery.rb
-require main.css
-require cakes.rb
-
 class Cookies
-    def initialize(type)
+   attr_accessor :name
+    def initialize(name, picture, description, price )
        @name=name
-       @picture=image
+       @picture=picture
        @description=description
        @price=price
     end
