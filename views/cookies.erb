@@ -1,46 +1,53 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title> Beaute Bakery</title>
-    <link rel="stylesheet" href="main.css">
-</head>
-<body>
-    <header>
-     
-      <img id="logo" src="bakeryLogo.png">
-     
-      <div id="navbar">
-        <a href="/home">Home</a>
-        <a href="/Cookies">Cookies</a>
-        <a href="/Cakes">Cakes</a>
-        <a href="/Muffins">Muffins</a>
-        <a href="/Contact">Contact Us</a>
-      </div>
-    </header>
 
-
+<div id="ba">
     <div id="cook1">
         <%= @@page %>
-        <%= @@page1 %>
+         <br>
+    <br>
+         <img id="co1" src="<%= @@page1 %>">
+          <br>
+    <br>
         <%= @@page2 %>
+         <br>
+    <br>
         <%= @@page3 %>
 
     </div>
+    <br>
+     <br>
+    <br>
+    <br>
 
     <div id="cook2">
         <%= @@pages %>
-        <%= @@pages1 %>
+         <br>
+    <br>
+        <img id="co2"src="<%= @@pages1 %>">
+         <br>
+    <br>
         <%= @@pages2 %>
+         <br>
+    <br>
         <%= @@pages3 %>
     </div>
+ <br>
+    <br> <br>
+    <br>
 
     <div id="cook3">
         <%= @@pagess %>
-        <%= @@pagess1 %>
+         <br>
+    <br>
+        <img id="co3"src="<%= @@pagess1 %>">
+         <br>
+    <br>
         <%= @@pagess2 %>
+         <br>
+    <br>
         <%= @@pagess3 %>
     </div>
 
+</div>
 
 
 
@@ -51,6 +58,4 @@
 
 
 
-
-    </body>
-</html>
+  

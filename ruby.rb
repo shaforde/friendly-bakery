@@ -8,19 +8,19 @@ require 'sinatra/reloader'
 # require './cookies.erb'
 # require './muffins.erb'
 
-@allCookies=[cookie1=Cookies.new( 'Just Married Sugar Cookies', 'weddingcookie.jpg','jkdjdhdf' ,'$25' ),
-cookie2=Cookies.new('Welcome Baby Ginger Cookies' , 'newbaby.jpg', 'dljdjfjdfio','$25' ),
-cookie3=Cookies.new('Congrats Grad Assorted Cookies','gradcookie.jpg' , 'dsjkdjk','$30' )]
+@allCookies=[cookie1=Cookies.new( 'Just Married Sugar Cookies', 'weddingcookie.jpg','These delectables desserts are perfect for your matrimony. Made with the richest butter we could find these sweet treats are sure to satisfy your guests. 20 per pack.' ,'$25' ),
+cookie2=Cookies.new('Welcome Baby Ginger Cookies' , 'newbaby.jpg', 'These welcome home baby cookies will make the arrival of your bundle of joy the event of the year. These cookies have ginger paired with nutmeg to be quite a delight. 20 per pack.','$25' ),
+cookie3=Cookies.new('Congrats Grad Assorted Cookies','gradcookie.jpg' , "Knowing that the exciting news about the grad is sure to big about a large crowd we offer an assorted set of cookies to satisy everyone's needs 20 per pack.",'$30' )]
 
 
-@allCakes=[cake1=Cakes.new('Wedding Cake', 'wedding.jpeg' , 'dfkdfklf', '$675' ),
-cake2=Cakes.new('Super Hero Cake', 'superhero.jpg', 'hdidj', '$400' ),
-cake3=Cakes.new('Unicorn Princess Cake', 'unicorn.jpg' , 'sdhsdid','$250' )]
+@allCakes=[cake1=Cakes.new('Wedding Cake', 'wedding.jpeg' , 'Have the cake of ypur dreams available in chocolate, vanilla, red velvet, and strawberry. Upon request the cake will be decorated to match colors and themes of wedding. Feeds 70 people.', '$675' ),
+cake2=Cakes.new('Super Hero Cake', 'superhero.jpg', 'This super hero themed cake is sure to make a super save at your event. Avaliable in vanilla or chocolate. Feeds 90 people.', '$400' ),
+cake3=Cakes.new('Unicorn Princess Cake', 'unicorn.jpg' , 'This cake will shine at your royal event. Though the unicorm is not for rides its sure to delight the crowd. Feeds 50 people','$250' )]
 
 
-@allMuffins= [muffin1=Muffins.new('Peach Cobbler Muffin', 'peachmuffin.jpg' , 'djsdkk' ,'$15' ),
- muffin2=Muffins.new('Glazed Strawberry Muffin', 'glazedstrawberry.jpg' , 'iikikd', '$14.74'),
- muffin3=Muffins.new('French Toast Muffin', 'frenchtoastmuffins.jpg'  , 'diodkk', '$13.50')]
+@allMuffins= [muffin1=Muffins.new('Peach Cobbler Muffin', 'peachmuffin.jpg' , 'This delicious muffin taste one of your favorite desserts and makes it into a delightful snack. 6 muffins per pack.' ,'$15' ),
+ muffin2=Muffins.new('Glazed Strawberry Muffin', 'glazedstrawberry.jpg' , 'This ddelightful strawberry treat will make your sweet tooth rejoice. 6per pack.', '$14.74'),
+ muffin3=Muffins.new('French Toast Muffin', 'frenchtoastmuffins.jpg'  , "Don't have time for french toast well now you ca grab to go. 6 per pack.", '$13.50')]
 
  
 
@@ -72,7 +72,7 @@ cake3=Cakes.new('Unicorn Princess Cake', 'unicorn.jpg' , 'sdhsdid','$250' )]
 
 
 
- get '/' do
+ get '/bakery' do
     erb :bakery
    end
   
